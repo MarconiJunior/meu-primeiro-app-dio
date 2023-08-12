@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MeuPrimeiroAppDio</string>
+    <string name="text_pt">Olá, venha fazer a formação android developer na dio.</string>
+    <string name="text_en">Hello, come join the Android Developer training at DIO.</string>
+    <string name="text_es">¡Hola, únete a la formación de Desarrollador de Android en DIO!</string>
+
 </resources>
