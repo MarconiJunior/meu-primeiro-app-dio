@@ -4,15 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#252525"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textTranslate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/text_pt"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/brazil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#6DA544"
+            android:text="PT-BR" />
+
+        <Button
+            android:id="@+id/eua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0052B4"
+            android:text="EN-EN" />
+
+        <Button
+            android:id="@+id/esp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D80027"
+            android:text="ESP" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
